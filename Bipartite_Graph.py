@@ -70,9 +70,9 @@ class BipartiteGraph(Graph):
             self.matching[x] = y
 
 if __name__ == "__main__":
-c=453
-XY = np.random.randint(2, size=(c, c))
-Adjacency = np.concatenate([np.concatenate([np.zeros([c,c]), np.transpose(XY)], axis=0),  np.concatenate([XY, np.zeros([c,c])], axis=0)], axis=1)
-BG=BipartiteGraph(Adjacency)
-BG.find_matching()
-BG.matching
+    c=453
+    XY = np.random.randint(2, size=(c, c))
+    Adjacency = np.concatenate([np.concatenate([np.zeros([c,c]), np.transpose(XY)], axis=0),  np.concatenate([XY, np.zeros([c,c])], axis=0)], axis=1)
+    BG=BipartiteGraph(Adjacency)
+    BG.find_matching()
+    BG.matching
